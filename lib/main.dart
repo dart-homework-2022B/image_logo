@@ -10,15 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('TITE'),
-        ),
-        body: Container(
-          child: Image.network(
-              'https://purr.objects-us-east-1.dream.io/i/tumblr_lruo9sj0Ho1qgn992o1_500.jpg'),
-        ),
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text('TITE'),
       ),
-    );
+      body: Image.asset(
+        'img/logo.png',
+        width: 300,
+      ),
+    ));
   }
 }
