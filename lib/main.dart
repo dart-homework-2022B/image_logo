@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
       body: Image.asset(
         'img/logo.png',
         width: 300,
+        height: 300,
+        fit: BoxFit.fill,
       ),
     ));
   }
